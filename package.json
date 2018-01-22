@@ -1,0 +1,28 @@
+{
+  "name": "handlebars_scrape_hw",
+  "version": "1.0.0",
+  "description": "<p>Please Read All of the instructions on the assignments before starting</p>",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nycda-wdi-jared/handlebars_scrape_hw.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nycda-wdi-jared/handlebars_scrape_hw/issues"
+  },
+  "homepage": "https://github.com/nycda-wdi-jared/handlebars_scrape_hw#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "pg": "^7.4.1",
+    "request": "^2.83.0",
+    "sequelize": "^4.31.1"
+  }
+}

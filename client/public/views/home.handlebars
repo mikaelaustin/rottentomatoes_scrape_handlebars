@@ -1,0 +1,35 @@
+<link rel="stylesheet" type="text/css" href="./public/css/home.css">
+<script src="./public/js/home.js"></script>
+
+<div class="container">
+	<h1 class="text-center">Handlebars Scrape Homework</h1>
+	<h2 class="text-center">TOP 10 MOVIES OF ALL TIME</h2>
+	<h4 class="text-center">According to Rotten Tomatoes</h4>
+	<div>
+		<h3 class="text-center">Click to view one at a time</h3>
+		<button id="prevButton" type="button" class ="btn btn-info col-offset-4">Previous</button>
+		<button id="nextButton" type="button" class ="btn btn-default col-offset-4">Next</button>
+		<h3 id="movie-div" class="container-fluid text-center"></h3>
+	</div>
+	{{!-- create a div that you will append the jquery to --}}
+	<div>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Rank</th>
+					<th>Rating</th>
+					<th>Title</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each movies}}
+					<tr>
+						<td>{{this.rank}}</td>
+						<td>{{this.rating}}</td>
+						<td>{{this.title}}</td>	
+					</tr>
+				{{/each}}
+			</tbody>
+		</table>
+	</div>
+</div>
